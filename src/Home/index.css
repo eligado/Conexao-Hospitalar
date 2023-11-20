@@ -1,0 +1,33 @@
+.projeto {
+    background-color: rgb(204, 235, 235); /* Neutral color */
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center; /* Center text */
+    margin: 0 auto; /* Center the box */
+    max-width: 95%;
+    border-radius: 1em;
+}
+
+.titulo-projeto {
+    color: #333;
+}
+
+.intro {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.mapa {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.titulo-mapa {
+   
+    color: rgb(69, 71, 71);
+}
+
+.api-mapa {
+    width: 90%;
+    height: auto;
+}
