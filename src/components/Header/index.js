@@ -6,7 +6,9 @@ function Header(){
     return(
            <div className='header'>
             <div className="header_logo">
-                    <Link to="/"><img src={logo} className="header_logoimg" alt="logo" /></Link>
+                    <Link to="/">
+                        <img src={logo} className="header_logoimg" alt="logo" />
+                    </Link>
                     <span className="vazio">
                     </span>
                     <p className="texto-logo">Manaus - AM</p>
