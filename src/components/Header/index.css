@@ -1,6 +1,8 @@
 /* Logo */
 .header {
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header_logo {
@@ -9,63 +11,40 @@
   color: rgb(39, 39, 39);
   display: flex;
   padding: 1em;
-  float: left;
 }
 
 .header_logoimg {
   width: 100px;
   height: 100px;
   padding-right: 10px;
-  animation: float 3s ease-in-out infinite;
 }
 
 .vazio {
   font-size: 30px;
   font-weight: bolder;
   cursor: pointer;
-  display: flex;
+  display: none;
   color: black;
   border-right: 1px solid black;
 }
 
 .texto-logo {
+  display: none;
   padding: 1.5rem;
   font-weight: bold;
 }
 
-/* Menu */
-.navbar {
-  text-align: center;
-  padding: 1.455rem;
-  align-items: center;
-  float: right;
-}
+/**logo ate 320px**/
+@media (max-width: 320px) {
+  .header_logoimg {
+    display: block;  /* Torna a imagem visível */
+  }
 
-.navbar ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
+  .texto-logo {
+    display: none;  /* Esconde o texto do logo */
+  }
 
-.navbar h1 {
-  font-size: 20px;
-}
-
-.nav-item {
-  margin: 0 9px;
-  color: black;
-}
-
-.nav-link {
-  display: flex;
-  font-size: 1.15rem;
-  color: black;
-  font-weight: 400;
-}
-
-.navbar-link {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  font-size: 20px;
+  .vazio{
+    display: none;
+  }
 }
