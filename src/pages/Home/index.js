@@ -3,6 +3,8 @@ import mapa from '../../img/mapa.png'
 import './index.css'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import Map from '../../components/Mapa.js';
+
 
 function Home(){
     return (
@@ -19,8 +21,7 @@ function Home(){
                     </p>
                 </div>
                 <div className='mapa'>
-                    <h2 className='titulo-mapa'>Mapa da Cidade</h2>
-                    <img src={mapa} className="api-mapa" alt="mapa" />
+                    <Map/>
                 </div>
             </div>
 
